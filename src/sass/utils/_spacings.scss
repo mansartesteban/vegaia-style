@@ -1,9 +1,11 @@
 @use "sass:map";
 @use "sass:list";
 
+@import "../core/maths";
+
 $min: 0 !default;
 $max: 4 !default;
-$steps: 16 !default;
+$steps: 5 !default;
 $unit: rem !default;
 
 $sizes: linear($min, $max, $steps);
@@ -48,45 +50,6 @@ $sizes: linear($min, $max, $steps);
     .msn-#{$i} {
         margin-top: $size + $unit;
         margin-bottom: $size + $unit;
-    }
-
-    // Zero margins 
-    .m-0 {
-        margin: 0;
-    }
-
-    .mt-0,
-    .mn-0 {
-        margin-top: 0;
-    }
-
-    .mb-0,
-    .ms-0 {
-        margin-bottom: 0;
-    }
-
-    .ml-0,
-    .mw-0 {
-        margin-left: 0;
-    }
-
-    .mr-0,
-    .me-0 {
-        margin-right: 0;
-    }
-
-    .mx-0,
-    .mew-0,
-    .mwe-0 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .my-0,
-    .mns-0,
-    .msn-0 {
-        margin-top: 0;
-        margin-bottom: 0;
     }
 
     // Negative margins
@@ -168,43 +131,93 @@ $sizes: linear($min, $max, $steps);
         padding-bottom: $size + $unit;
     }
 
-    // Zero paddings
-    .p-0 {
-        padding: 0;
+    .gap-#{$i} {
+        gap: $size + $unit;
     }
 
-    .pt-0,
-    .pn-0 {
-        padding-top: 0;
-    }
+}
 
-    .pb-0,
-    .ps-0 {
-        padding-bottom: 0;
-    }
 
-    .pl-0,
-    .pw-0 {
-        padding-left: 0;
-    }
+// Zero margins 
+.m-0 {
+    margin: 0;
+}
 
-    .pr-0,
-    .pe-0 {
-        padding-right: 0;
-    }
+.mt-0,
+.mn-0 {
+    margin-top: 0;
+}
 
-    .px-0,
-    .pew-0,
-    .pwe-0 {
-        padding-left: 0;
-        padding-right: 0;
-    }
+.mb-0,
+.ms-0 {
+    margin-bottom: 0;
+}
 
-    .py-0,
-    .pns-0,
-    .psn-0 {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+.ml-0,
+.mw-0 {
+    margin-left: 0;
+}
 
+.mr-0,
+.me-0 {
+    margin-right: 0;
+}
+
+.mx-0,
+.mew-0,
+.mwe-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.my-0,
+.mns-0,
+.msn-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// Zero paddings
+.p-0 {
+    padding: 0;
+}
+
+.pt-0,
+.pn-0 {
+    padding-top: 0;
+}
+
+.pb-0,
+.ps-0 {
+    padding-bottom: 0;
+}
+
+.pl-0,
+.pw-0 {
+    padding-left: 0;
+}
+
+.pr-0,
+.pe-0 {
+    padding-right: 0;
+}
+
+.px-0,
+.pew-0,
+.pwe-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.py-0,
+.pns-0,
+.psn-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+// Zero gap
+
+.gap-0 {
+    gap: 0;
 }

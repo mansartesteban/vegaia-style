@@ -9,7 +9,7 @@
     $results: (
     );
 
-@for $i from 0 through $steps {
+@for $i from 1 through $steps - 1 {
     $val: mapRange($i, 0, $steps, $min, $max);
     $results: list.append($results, $val);
 }
