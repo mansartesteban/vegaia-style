@@ -1,0 +1,16 @@
+{
+  "name": "vegaia-style",
+  "version": "0.0.0",
+  "description": "Vegaia UI Framework",
+  "type": "module",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.80.3"
+  }
+}
