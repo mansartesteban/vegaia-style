@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "./maths";
+
+@function createMap($classConfig) {
+
+
+    $min: map.get($classConfig, "min");
+    $max: map.get($classConfig, "max");
+    $steps: map.get($classConfig, "steps");
+    $rule: map.get($classConfig, "rule");
+
+    $sizes: null;
+
+    $sizes: linear($min, $max, $steps);
+
+}
+
+
+@function mapset($map, $key, $value) {
+    $new: (
+        $key: $value,
+        );
+    @return map.merge($map, $new);
+}

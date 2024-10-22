@@ -1,9 +1,9 @@
-import { defineConfig } from "vite";
-import path from "path";
-import AutoImport from "unplugin-auto-import/vite";
-import Vue from "@vitejs/plugin-vue";
+import { defineConfig } from "vite"
+import path from "path"
+import AutoImport from "unplugin-auto-import/vite"
+import Vue from "@vitejs/plugin-vue"
 
-const root = path.resolve(__dirname);
+const root = path.resolve(__dirname)
 
 export default defineConfig({
   plugins: [
@@ -17,13 +17,13 @@ export default defineConfig({
       "@": path.join(root),
     },
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: "modern",
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       api: "modern",
+  //     },
+  //   },
+  // },
   module: {
     rules: [
       {
@@ -32,4 +32,4 @@ export default defineConfig({
       },
     ],
   },
-});
+})

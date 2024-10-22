@@ -1,0 +1,191 @@
+.m-1 {
+  margin: linear(0, 4, 16)rem;
+}
+
+.mt-1,
+.mn-1 {
+  margin-top: linear(0, 4, 16)rem;
+}
+
+.mb-1,
+.ms-1 {
+  margin-bottom: linear(0, 4, 16)rem;
+}
+
+.ml-1,
+.mw-1 {
+  margin-left: linear(0, 4, 16)rem;
+}
+
+.mr-1,
+.me-1 {
+  margin-right: linear(0, 4, 16)rem;
+}
+
+.mx-1,
+.mew-1,
+.mwe-1 {
+  margin-left: linear(0, 4, 16)rem;
+  margin-right: linear(0, 4, 16)rem;
+}
+
+.my-1,
+.mns-1,
+.msn-1 {
+  margin-top: linear(0, 4, 16)rem;
+  margin-bottom: linear(0, 4, 16)rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0,
+.mn-0 {
+  margin-top: 0;
+}
+
+.mb-0,
+.ms-0 {
+  margin-bottom: 0;
+}
+
+.ml-0,
+.mw-0 {
+  margin-left: 0;
+}
+
+.mr-0,
+.me-0 {
+  margin-right: 0;
+}
+
+.mx-0,
+.mew-0,
+.mwe-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my-0,
+.mns-0,
+.msn-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.m-n-1 {
+  margin: calc(linear(0, 4, 16) + rem * -1);
+}
+
+.mt-n-1,
+.mn-n-1 {
+  margin-top: calc(linear(0, 4, 16) + rem * -1);
+}
+
+.mb-n-1,
+.ms-n-1 {
+  margin-bottom: calc(linear(0, 4, 16) + rem * -1);
+}
+
+.ml-n-1,
+.mw-n-1 {
+  margin-left: calc(linear(0, 4, 16) + rem * -1);
+}
+
+.mr-n-1,
+.me-n-1 {
+  margin-right: calc(linear(0, 4, 16) + rem * -1);
+}
+
+.mx-n-1,
+.mew-n-1,
+.mwe-n-1 {
+  margin-left: calc(linear(0, 4, 16) + rem * -1);
+  margin-right: calc(linear(0, 4, 16) + rem * -1);
+}
+
+.my-n-1,
+.mns-n-1,
+.msn-n-1 {
+  margin-top: calc(linear(0, 4, 16) + rem * -1);
+  margin-bottom: calc(linear(0, 4, 16) + rem * -1);
+}
+
+.p-1 {
+  padding: linear(0, 4, 16)rem;
+}
+
+.pt-1,
+.pn-1 {
+  padding-top: linear(0, 4, 16)rem;
+}
+
+.pb-1,
+.ps-1 {
+  padding-bottom: linear(0, 4, 16)rem;
+}
+
+.pl-1,
+.pw-1 {
+  padding-left: linear(0, 4, 16)rem;
+}
+
+.pr-1,
+.pe-1 {
+  padding-right: linear(0, 4, 16)rem;
+}
+
+.px-1,
+.pew-1,
+.pwe-1 {
+  padding-left: linear(0, 4, 16)rem;
+  padding-right: linear(0, 4, 16)rem;
+}
+
+.py-1,
+.pns-1,
+.psn-1 {
+  padding-top: linear(0, 4, 16)rem;
+  padding-bottom: linear(0, 4, 16)rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pt-0,
+.pn-0 {
+  padding-top: 0;
+}
+
+.pb-0,
+.ps-0 {
+  padding-bottom: 0;
+}
+
+.pl-0,
+.pw-0 {
+  padding-left: 0;
+}
+
+.pr-0,
+.pe-0 {
+  padding-right: 0;
+}
+
+.px-0,
+.pew-0,
+.pwe-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.py-0,
+.pns-0,
+.psn-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=spacings.css.map */

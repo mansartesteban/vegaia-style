@@ -1,0 +1,18 @@
+@use "sass:math";
+@use "sass:list";
+
+@function mapRange($n: 0, $in_min: 0, $in_max: 0, $out_min: 0, $out_max: 0) {
+    @return ($n - $in_min) * math.div(($out_max - $out_min), ($in_max - $in_min))+$out_min;
+}
+
+@function linear($min: 0, $max: 0, $steps: 0) {
+    $results: (
+    );
+
+@for $i from 0 through $steps {
+    $val: mapRange($i, 0, $steps, $min, $max);
+    $results: list.append($results, $val);
+}
+
+@return $results;
+}

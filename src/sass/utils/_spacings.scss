@@ -1,0 +1,210 @@
+@use "sass:map";
+@use "sass:list";
+
+$min: 0 !default;
+$max: 4 !default;
+$steps: 16 !default;
+$unit: rem !default;
+
+$sizes: linear($min, $max, $steps);
+
+@each $size in $sizes {
+    $i: list.index($sizes, $size);
+
+    // Positive margins
+    .m-#{$i} {
+        margin: $size + $unit;
+    }
+
+    .mt-#{$i},
+    .mn-#{$i} {
+        margin-top: $size + $unit;
+    }
+
+    .mb-#{$i},
+    .ms-#{$i} {
+        margin-bottom: $size + $unit;
+    }
+
+    .ml-#{$i},
+    .mw-#{$i} {
+        margin-left: $size + $unit;
+    }
+
+    .mr-#{$i},
+    .me-#{$i} {
+        margin-right: $size + $unit;
+    }
+
+    .mx-#{$i},
+    .mew-#{$i},
+    .mwe-#{$i} {
+        margin-left: $size + $unit;
+        margin-right: $size + $unit;
+    }
+
+    .my-#{$i},
+    .mns-#{$i},
+    .msn-#{$i} {
+        margin-top: $size + $unit;
+        margin-bottom: $size + $unit;
+    }
+
+    // Zero margins 
+    .m-0 {
+        margin: 0;
+    }
+
+    .mt-0,
+    .mn-0 {
+        margin-top: 0;
+    }
+
+    .mb-0,
+    .ms-0 {
+        margin-bottom: 0;
+    }
+
+    .ml-0,
+    .mw-0 {
+        margin-left: 0;
+    }
+
+    .mr-0,
+    .me-0 {
+        margin-right: 0;
+    }
+
+    .mx-0,
+    .mew-0,
+    .mwe-0 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .my-0,
+    .mns-0,
+    .msn-0 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    // Negative margins
+    .m-n-#{$i} {
+        margin: calc($size + $unit * -1);
+    }
+
+    .mt-n-#{$i},
+    .mn-n-#{$i} {
+        margin-top: calc($size + $unit * -1);
+    }
+
+    .mb-n-#{$i},
+    .ms-n-#{$i} {
+        margin-bottom: calc($size + $unit * -1);
+    }
+
+    .ml-n-#{$i},
+    .mw-n-#{$i} {
+        margin-left: calc($size + $unit * -1);
+    }
+
+    .mr-n-#{$i},
+    .me-n-#{$i} {
+        margin-right: calc($size + $unit * -1);
+    }
+
+    .mx-n-#{$i},
+    .mew-n-#{$i},
+    .mwe-n-#{$i} {
+        margin-left: calc($size + $unit * -1);
+        margin-right: calc($size + $unit * -1);
+    }
+
+    .my-n-#{$i},
+    .mns-n-#{$i},
+    .msn-n-#{$i} {
+        margin-top: calc($size + $unit * -1);
+        margin-bottom: calc($size + $unit * -1);
+    }
+
+
+    // Paddings
+    .p-#{$i} {
+        padding: $size + $unit;
+    }
+
+    .pt-#{$i},
+    .pn-#{$i} {
+        padding-top: $size + $unit;
+    }
+
+    .pb-#{$i},
+    .ps-#{$i} {
+        padding-bottom: $size + $unit;
+    }
+
+    .pl-#{$i},
+    .pw-#{$i} {
+        padding-left: $size + $unit;
+    }
+
+    .pr-#{$i},
+    .pe-#{$i} {
+        padding-right: $size + $unit;
+    }
+
+    .px-#{$i},
+    .pew-#{$i},
+    .pwe-#{$i} {
+        padding-left: $size + $unit;
+        padding-right: $size + $unit;
+    }
+
+    .py-#{$i},
+    .pns-#{$i},
+    .psn-#{$i} {
+        padding-top: $size + $unit;
+        padding-bottom: $size + $unit;
+    }
+
+    // Zero paddings
+    .p-0 {
+        padding: 0;
+    }
+
+    .pt-0,
+    .pn-0 {
+        padding-top: 0;
+    }
+
+    .pb-0,
+    .ps-0 {
+        padding-bottom: 0;
+    }
+
+    .pl-0,
+    .pw-0 {
+        padding-left: 0;
+    }
+
+    .pr-0,
+    .pe-0 {
+        padding-right: 0;
+    }
+
+    .px-0,
+    .pew-0,
+    .pwe-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .py-0,
+    .pns-0,
+    .psn-0 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}
