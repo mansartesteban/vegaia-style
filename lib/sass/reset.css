@@ -16,7 +16,7 @@
   border: 0;
   font-size: 100%;
   font-family: inherit;
-  font-weight: normal;
+  font-weight: inherit;
   vertical-align: baseline;
   background: transparent;
   color: inherit;
@@ -40,6 +40,12 @@ summary {
      https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 html {
   box-sizing: border-box;
+}
+
+html,
+body {
+  font-weight: normal;
+  font-size: 16px;
 }
 
 *,
