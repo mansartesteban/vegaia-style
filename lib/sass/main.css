@@ -812,6 +812,10 @@ textarea {
   align-items: baseline;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .justify-content-start {
   justify-content: flex-start;
 }
